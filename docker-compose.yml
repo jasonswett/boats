@@ -54,11 +54,11 @@ services:
     # Specify the values of the environment variables
     # used in this container.
     environment:
-      RAILS_ENV: development
-      DATABASE_NAME: boats_development
-      DATABASE_USER: boats_development
-      DATABASE_PASSWORD: 
-      DATABASE_HOST: database
+      RAILS_ENV: "${RAILS_ENV}"
+      DATABASE_NAME: "${DATABASE_NAME}"
+      DATABASE_USER: "${DATABASE_USER}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
+      DATABASE_HOST: "${DATABASE_HOST}"
 
 # Declare the volumes that our application uses.
 volumes:
